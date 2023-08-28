@@ -1,0 +1,100 @@
+﻿%Aug 14 10:12:13:360 2023 GD-JY-ZH
+Inactive timeout reached, logging out.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************
+* Copyright (c) 2004-2017 New H3C Technologies Co., Ltd. All rights reserved.*
+* Without the owner's prior written consent,                                 *
+* no decompiling or reverse-engineering shall be allowed.                    *
+******************************************************************************
+
+Line con0 is available.
+
+
+Press ENTER to get started.
+<GD-JY-ZHL-M-1.STN.RX8800-16111111>%Aug 14 11:07:07:428 2023 GD-JY-ZHL-M-1.STN.RX8800-16111111 SHELL/5/SHELL_LOGIN: Console logged in from con0.
+
+<GD-JY-ZHL-M-1.STN.RX8800-16111111>
+<GD-JY-ZHL-M-1.STN.RX8800-16111111>
+<GD-JY-ZHL-M-1.STN.RX8800-16111111>dis cur
+<GD-JY-ZHL-M-1.STN.RX8800-16111111>dis current-configuration 
+#
+ version 7.1.075, Alpha 7571
+#
+ sysname GD-JY-ZHL-M-1.STN.RX8800-16111111
+#
+ telnet server enable
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ lldp global enable
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+ stp global enable
+#
+               
+Inactive ti
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************
+* Copyright (c) 2004-2017 New H3C Technologies Co., Ltd. All rights reserved.*
+* Without the owner's prior written consent,                                 *
+* no decompiling or reverse-engineering shall be allowed.                    *
+******************************************************************************
+
+Line con0 is available.
+
+
+Press ENTER to get started.
