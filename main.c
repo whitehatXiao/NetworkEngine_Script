@@ -35,6 +35,7 @@ int main()
     reg.rbp = 0x7ffffffee210;
     reg.rsp = 0x7ffffffee1f0;
 
+    // 使得 reg.rip 指针直线数组的第5个地址
     reg.rip = (uint64_t)&program[11]; // not extend clamid
 
     write64bits_dram(va2pa(0x7ffffffee210), 0x08000660); // rbp
