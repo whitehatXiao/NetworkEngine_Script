@@ -1,0 +1,210 @@
+﻿Cryptographic algorithms tests pas
+Enable DHCP client on Vlan-interface1.
+Set DHCP client identifier: a00bb7ac0200-VLAN0001
+Automatic configuration is running, press CTRL_C or CTRL_D to break.
+Automatic configuration is aborted.
+Line con0 is available.
+
+
+Press ENTER to get started.
+******************************************************************************
+* Copyright (c) 2004-2022 New H3C Technologies Co., Ltd. All rights reserved.*
+* Without the owner's prior written consent,                                 *
+* no decompiling or reverse-engineering shall be allowed.                    *
+******************************************************************************
+
+<H3C>%Aug 28 10:57:08:546 2023 H3C SHELL/5/SHELL_LOGIN: Console logged in from con0.
+
+<H3C>sys
+System View: return to User View with Ctrl+Z.
+[H3C]
+[H3C]int lo
+[H3C]int Lin
+[H3C]int Linrou
+[H3C]int rou
+[H3C]int Route-Aggregation 1
+[H3C]int Route-Aggregation 1
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]quit
+[H3C]int gi
+[H3C]int GigabitEthernet 1/0/1 
+[H3C-GigabitEthernet1/0/1]
+[H3C-GigabitEthernet1/0/1]dis this
+#
+interface GigabitEthernet1/0/1
+ port link-mode bridge
+ combo enable fiber
+#
+return
+[H3C-GigabitEthernet1/0/1]
+[H3C-GigabitEthernet1/0/1]port link
+[H3C-GigabitEthernet1/0/1]port link-mo
+[H3C-GigabitEthernet1/0/1]port link-mode rou
+[H3C-GigabitEthernet1/0/1]port link-mode route 
+The configuration of the interface will be restored to the default. Continue? [Y/N]:
+Before pressing ENTER you must choose 'YES' or 'NO'[Y/N]:y
+[H3C-GigabitEthernet1/0/1]%Aug 28 10:57:28:986 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface GigabitEthernet1/0/1 changed to down.
+%Aug 28 10:57:28:986 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to down.
+
+[H3C-GigabitEthernet1/0/1]
+[H3C-GigabitEthernet1/0/1]port link
+[H3C-GigabitEthernet1/0/1]port link-g%Aug 28 10:57:31:061 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface GigabitEthernet1/0/1 changed to up.
+%Aug 28 10:57:31:061 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to up.
+
+[H3C-GigabitEthernet1/0/1]port link-a
+[H3C-GigabitEthernet1/0/1]port link-aggregation ?
+  group  Specify aggregation group number
+
+[H3C-GigabitEthernet1/0/1]port link-aggregation g
+[H3C-GigabitEthernet1/0/1]port link-aggregation group %Aug 28 10:57:32:888 2023 H3C LLDP/6/LLDP_CREATE_NEIGHBOR: Nearest bridge agent neighbor created on port GigabitEthernet1/0/1 (IfIndex 2), neighbor's chassis ID is a00b-b3ff-0100, port ID is GigabitEthernet1/0/1.
+1
+[H3C-GigabitEthernet1/0/1]port link-aggregation group 1
+[H3C-GigabitEthernet1/0/1]%Aug 28 10:57:33:887 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to down.
+%Aug 28 10:57:33:889 2023 H3C LAGG/6/LAGG_ACTIVE: Member port GE1/0/1 of aggregation group RAGG1 changed to the active state.
+%Aug 28 10:57:33:892 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to up.
+%Aug 28 10:57:33:893 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface Route-Aggregation1 changed to up.
+%Aug 28 10:57:33:893 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface Route-Aggregation1 changed to up.
+
+[H3C-GigabitEthernet1/0/1]quit
+[H3C]int gi1/0/2
+[H3C-GigabitEthernet1/0/2]
+[H3C-GigabitEthernet1/0/2]port link
+[H3C-GigabitEthernet1/0/2]port link-mo
+[H3C-GigabitEthernet1/0/2]port link-mode rou
+[H3C-GigabitEthernet1/0/2]port link-mode route 
+The configuration of the interface will be restored to the default. Continue? [Y/N]:y
+%Aug 28 10:57:43:714 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface GigabitEthernet1/0/2 changed to down.
+%Aug 28 10:57:43:714 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to down.
+[H3C-GigabitEthernet1/0/2]
+[H3C-GigabitEthernet1/0/2]
+[H3C-GigabitEthernet1/0/2]port link
+[H3C-GigabitEthernet1/0/2]port link-a
+[H3C-GigabitEthernet1/0/2]port link-aggregation g
+[H3C-GigabitEthernet1/0/2]port link-aggregation group %Aug 28 10:57:45:769 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface GigabitEthernet1/0/2 changed to up.
+%Aug 28 10:57:45:769 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to up.
+1
+[H3C-GigabitEthernet1/0/2]port link-aggregation group 1 
+[H3C-GigabitEthernet1/0/2]%Aug 28 10:57:46:540 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to down.
+%Aug 28 10:57:46:542 2023 H3C LAGG/6/LAGG_ACTIVE: Member port GE1/0/2 of aggregation group RAGG1 changed to the active state.
+%Aug 28 10:57:46:545 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to up.
+
+[H3C-GigabitEthernet1/0/2]
+[H3C-GigabitEthernet1/0/2]%Aug 28 10:57:46:883 2023 H3C LLDP/6/LLDP_CREATE_NEIGHBOR: Nearest bridge agent neighbor created on port GigabitEthernet1/0/2 (IfIndex 3), neighbor's chassis ID is a00b-b3ff-0100, port ID is GigabitEthernet1/0/2.
+int 
+[H3C-GigabitEthernet1/0/2]int
+[H3C-GigabitEthernet1/0/2]quit
+[H3C]int rou
+[H3C]int Route-Aggregation 1
+[H3C]int Route-Aggregation 1 
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]dis this
+#
+interface Route-Aggregation1
+#
+return
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]port link
+[H3C-Route-Aggregation1]port link-a
+[H3C-Route-Aggregation1]lin
+[H3C-Route-Aggregation1]link-a
+[H3C-Route-Aggregation1]link-aggregation mo
+[H3C-Route-Aggregation1]link-aggregation mode d
+[H3C-Route-Aggregation1]link-aggregation mode dynamic ?
+  <cr>  
+
+[H3C-Route-Aggregation1]link-aggregation mode dynamic 
+[H3C-Route-Aggregation1]%Aug 28 10:58:00:679 2023 H3C LAGG/6/LAGG_LACP_RECEIVE_TIMEOUT: LACPDU reception timed out on member port GE1/0/1 in aggregation group RAGG1.
+%Aug 28 10:58:00:681 2023 H3C LAGG/6/LAGG_LACP_RECEIVE_TIMEOUT: LACPDU reception timed out on member port GE1/0/2 in aggregation group RAGG1.
+%Aug 28 10:58:00:683 2023 H3C LAGG/6/LAGG_INACTIVE_IFCFG_NONAGG: Member port GE1/0/1 of aggregation group RAGG1 changed to the inactive state, because the link of the port was not aggregatable.
+%Aug 28 10:58:00:683 2023 H3C LAGG/6/LAGG_INACTIVE_IFCFG_NONAGG: Member port GE1/0/2 of aggregation group RAGG1 changed to the inactive state, because the link of the port was not aggregatable.
+%Aug 28 10:58:00:684 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to down.
+%Aug 28 10:58:00:684 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to down.
+%Aug 28 10:58:00:690 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface Route-Aggregation1 changed to down.
+%Aug 28 10:58:00:690 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface Route-Aggregation1 changed to down.
+%Aug 28 10:58:00:698 2023 H3C LAGG/6/LAGG_ACTIVE: Member port GE1/0/1 of aggregation group RAGG1 changed to the active state.
+%Aug 28 10:58:00:701 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/1 changed to up.
+%Aug 28 10:58:00:701 2023 H3C IFNET/3/PHY_UPDOWN: Physical state on the interface Route-Aggregation1 changed to up.
+%Aug 28 10:58:00:701 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface Route-Aggregation1 changed to up.
+%Aug 28 10:58:00:707 2023 H3C LAGG/6/LAGG_ACTIVE: Member port GE1/0/2 of aggregation group RAGG1 changed to the active state.
+%Aug 28 10:58:00:711 2023 H3C IFNET/5/LINK_UPDOWN: Line protocol state on the interface GigabitEthernet1/0/2 changed to up.
+
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]dis this
+#
+interface Route-Aggregation1
+ link-aggregation mode dynamic
+#
+return
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]
+[H3C-Route-Aggregation1]dis link
+[H3C-Route-Aggregation1]dis link-aggregation ?
+  load-sharing     Link aggregation load sharing
+  member-port      Display member(s) of link aggregation group
+  summary          Summary information
+  troubleshooting  Troubleshoot the aggregation state of member ports
+  verbose          Display verbose information of link aggregation group
+
+[H3C-Route-Aggregation1]dis link-aggregation 
+                                             ^
+ % Incomplete command found at '^' position.
+[H3C-Route-Aggregation1]dis link-aggregation ver
+[H3C-Route-Aggregation1]dis link-aggregation verbose 
+Loadsharing Type: Shar -- Loadsharing, NonS -- Non-Loadsharing 
+Port Status: S -- Selected, U -- Unselected, I -- Individual 
+Port: A -- Auto port, M -- Management port, R -- Reference port 
+Flags:  A -- LACP_Activity, B -- LACP_Timeout, C -- Aggregation, 
+        D -- Synchronization, E -- Collecting, F -- Distributing, 
+        G -- Defaulted, H -- Expired 
+
+Aggregate Interface: Route-Aggregation1
+Creation Mode: Manual
+Aggregation Mode: Dynamic
+Loadsharing Type: Shar
+Management VLANs: None
+System ID: 0x8000, a00b-b7ac-0200
+Local: 
+  Port                Status   Priority Index    Oper-Key               Flag
+  GE1/0/1             S        32768    1        1                      {ACDEF}
+  GE1/0/2             S        32768    2        1                      {ACDEF}
+Remote: 
+  Actor               Priority Index    Oper-Key SystemID               Flag   
+  GE1/0/1(R)          32768    2        1        0x8000, a00b-b3ff-0100 {ACDEF}
+  GE1/0/2             32768    3        1        0x8000, a00b-b3ff-0100 {ACDEF}
+[H3C-Route-Aggregation1] 
+Inactive timeout reached, logging out.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Line con0 is available.
+
+
+Press ENTER to get started.
